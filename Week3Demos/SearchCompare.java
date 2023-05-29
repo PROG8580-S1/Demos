@@ -28,9 +28,9 @@ public class SearchCompare {
 		} else {
 			System.out.println("Not found");
 		}
-		
+
 		testString = "xx oo xx oo xx";
-		
+
 		index = testString.indexOf("xx");
 		System.out.println("At index: " + index);
 
@@ -39,6 +39,43 @@ public class SearchCompare {
 
 		index = testString.lastIndexOf("xx");
 		System.out.println("At index: " + index);
+
+		// 2. Use substrings to split a name
+		testString = "Aristeides Theo";
+
+		index = testString.indexOf(' ');
+
+		firstName = testString.substring(0, index);
+		System.out.println(firstName);
+
+		lastName = testString.substring(index + 1);
+		System.out.println(lastName);
+
+		// 3. Compare two strings
+
+		testString = "Waterloo";
+		testString2 = "Toronto";
+
+		System.out.println();
+
+		if (testString.equalsIgnoreCase(testString2)) {
+			System.out.println("Same city");
+		} else {
+			System.out.println("Different city");
+		}
+
+		compareValue = testString.compareTo(testString2);
+
+		System.out.println(compareValue);
+
+		if (compareValue < 0) {
+			System.out.println(testString + " " + testString2);
+		} else if (compareValue > 0) {
+			System.out.println(testString2 + " " + testString);
+		} else {
+			System.out.println("same city");
+		}
+
 	}
 
 }
