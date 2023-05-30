@@ -3,7 +3,7 @@ public class CharValues {
 
 	public static void main(String[] args) {
 		int i = 'a';
-		char c = 50;
+		char c = 88;
 		
 		System.out.println(i);
 		System.out.println(c);
@@ -20,8 +20,9 @@ public class CharValues {
 			System.out.println(c + " is a number");
 		}
 		
-		
-		
+		//have to convert an int to a char before assigning it.
+		i = 88;
+		c = (char)i;
 		
 		
 		
