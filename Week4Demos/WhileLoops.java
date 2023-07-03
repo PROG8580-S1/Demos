@@ -12,8 +12,18 @@ public class WhileLoops {
 			System.out.println(counter + " ");
 			counter++;
 		}
+		int x = 1;
+		
+//	    while ((0 < x) && (x < 100)) {
+//	    	System.out.println(x);
+//	    	x++;
+//	    }
+	    
+	    if( x == 2)
+	    	System.out.println(x);
+    		System.out.println(4);
 
-		// 2. counting program
+	    // 2. counting program
 		System.out.println();
 
 		boolean keepGoing = true;
