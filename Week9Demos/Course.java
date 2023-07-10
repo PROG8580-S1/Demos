@@ -11,6 +11,15 @@ public class Course {
 		this.courseName = courseName;
 	}
 	
+	public void addStudent(Student student) {
+		students[numberOfStudents] = student;
+		numberOfStudents++;
+	}
+	
+	public Student[] getStudents() {
+		return students;
+	}
+	
 	public String getCourseName() {
 		return courseName;
 	}
@@ -18,4 +27,19 @@ public class Course {
 	public int getNumberOfStudents() {
 		return numberOfStudents;
 	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
