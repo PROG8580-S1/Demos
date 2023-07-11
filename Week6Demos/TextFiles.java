@@ -11,6 +11,7 @@ public class TextFiles {
 	public static void loadColours() {
 		File file = new File("Colours.txt");
 
+		
 		try(Scanner fileScanner = new Scanner(file)){
 			
 			while(fileScanner.hasNextLine()) {
